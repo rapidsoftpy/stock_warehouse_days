@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_warehouse_days_form" model="ir.ui.view">
+            <field name="name">stock.reordering.rules.days.form</field>
+            <field name="model">stock.warehouse.orderpoint</field>
+            <field name="inherit_id" ref="stock.view_warehouse_orderpoint_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form/sheet/group[2]" positon="inside">
+                    <group string="Warehouse days">
+                        <field name="is_warehouse_days"/>
+                        <field name="warehouse_days" attrs="{'invisible' : [('is_warehouse_days','=',False)]}"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

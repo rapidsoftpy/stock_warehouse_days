@@ -8,7 +8,7 @@
     'description': """
 Warehouse days Management
 =======================
-This module allows you to easily add warehouse days to the reordering rules for the calculation of stock supply.
+This module allows you to easily add warehouse days to the reordering rules for the calculation of stock supply, based on the products sales..
     """,
     'website': 'https://www.rapidsoft.com.py',
     'author': 'Rapidsoft',

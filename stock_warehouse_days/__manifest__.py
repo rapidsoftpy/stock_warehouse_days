@@ -5,6 +5,8 @@
     'name': 'WMS days management',
     'version': '1.1',
     'summary': 'Warehouse days',
+    'licence': 'LGPL-3',
+    'support': 'info@rapidsoft.com.py',
     'description': """
 Warehouse days Management
 =======================

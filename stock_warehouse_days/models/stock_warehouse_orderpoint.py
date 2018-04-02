@@ -36,8 +36,9 @@ class StockOrderpoint(models.Model):
                         sale_date = datetime.strptime(s.order_id.confirmation_date, "%Y-%m-%d %H:%M:%S")
                         if sale_date >= limit_date:
                             product_qty += s.product_uom_qty #in case there no sales of the product, the reordering rules have 0 value.
-                    o.product_min_qty = product_qty #updating reordering rules
-                    o.product_max_qty = product_qty #updating reordering rules
+                    o.product_min_qty = product_qty  # updating reordering rules
+                    o.product_max_qty = product_qty  # updating reordering rules
+                    product_qty = 0
                     o.product_id.message_post(body=_('A reordering rule associated to this product has been updated. %s') % (o.name ))
 
 
